@@ -54,6 +54,7 @@ public class DiamondExercises {
     private static void drawADiamondWithYourName(int n) {
 
         StringBuffer[] triangle = getIsoscelesTriangle(n-1);
+
         for (int i = 0; i <triangle.length ; i++) {
             System.out.println(triangle[i]);
         }
