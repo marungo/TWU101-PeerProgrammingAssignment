@@ -15,13 +15,9 @@ public class Main {
         ArrayList<Monster> monsters = new ArrayList<Monster>();
 
         for (int i = 0; i <3 ; i++) {
-            Orc orc = new Orc();
-            Troll troll = new Troll();
-            monsters.add(orc);
-            monsters.add(troll);
-
+            monsters.add(new Orc());
+            monsters.add(new Troll());
         }
-
 
         for (Monster monster:monsters) {
             monster.takeDamage(10);
