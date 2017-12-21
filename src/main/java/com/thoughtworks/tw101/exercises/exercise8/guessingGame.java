@@ -34,7 +34,7 @@ public class guessingGame {
     }
 
 
-    public int getRandomNumber() {
+    private int getRandomNumber() {
         Random r = new Random();
         int random = r.nextInt(99);
         random += 1;
@@ -66,7 +66,7 @@ public class guessingGame {
         return guess;
     }
 
-    void check(int guess){
+    private void check(int guess){
         if (guess == randomNumber) {
             System.out.println("you guessed right! you win!");
             gameOver = true;
@@ -80,7 +80,7 @@ public class guessingGame {
         }
     }
 
-    boolean isWithinValidRange(int potentialGuess) {
+    private boolean isWithinValidRange(int potentialGuess) {
         if (potentialGuess > 0 && potentialGuess < 100) {
             return true;
         }
@@ -89,12 +89,12 @@ public class guessingGame {
         }
     }
 
-    void askForGuess() {
+    private void askForGuess() {
         System.out.println("Please enter a valid positive integer");
     }
 
 
-    void printGuesses(){
+    private void printGuesses(){
         System.out.println("Here are your guesses:");
         for (int i = 0; i < guesses.size() ; i++) {
             System.out.println("guess #" + i + " was: " + guesses.get(i));
