@@ -11,7 +11,7 @@ public class guessingGame {
     private int guess;
     public boolean gameOver = false;
 
-    guessingGame() {
+    public guessingGame() {
         randomNumber = getRandomNumber();
         scanner = new Scanner(System.in);
     }

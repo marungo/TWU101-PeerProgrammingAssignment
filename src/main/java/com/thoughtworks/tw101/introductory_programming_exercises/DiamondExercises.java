@@ -1,7 +1,5 @@
 package com.thoughtworks.tw101.introductory_programming_exercises;
 
-//import com.intellij.jarRepository.services.artifactory.Endpoint;
-
 /*
 DISPENSABLE 1: there's a three-line for-loop that is
 used several times to print out the triangle rows.
@@ -16,7 +14,6 @@ drawDiamond() and in drawDiamondWithYourName()
 D2 Refactor: I made one method to account for both, using boolean to turn on
 and off name.
 */
-
 
 import java.util.stream.IntStream;
 
@@ -38,7 +35,7 @@ public class DiamondExercises {
         return IntStream.range(from,to).map(i -> to - i + from - 1).toArray();
     }
 
-    //    Isosceles Triangle
+//    Isosceles Triangle
 //    Given a number n, print a centered triangle. Example for n=3:
 //              *
 //             ***
@@ -48,7 +45,7 @@ public class DiamondExercises {
         printTriangle(triangle, buildIndexRange(0,triangle.length, false));
     }
 
-    //    refactor code for diamonds
+//    refactor code for diamonds
     private static void drawADiamondWithOptionalName(int n, boolean name) {
         StringBuffer[] triangle = getIsoscelesTriangle(n);
         printTriangle(triangle, buildIndexRange(0,triangle.length-1, false));
@@ -72,7 +69,7 @@ public class DiamondExercises {
     }
 
 
-    //    Diamond with Name
+//    Diamond with Name
 //    Given a number n, print a centered diamond with your name in place of the middle line. Example for n=3:
 //
 //             *
